@@ -1,91 +1,166 @@
-.hello {
-  border-radius: 5px;
-  padding: 5px 25px;
-  margin-top: 20px;
-  border-width: 2.5px;
-}
-
-.hello::placeholder {
-  color: rgb(122, 118, 118);
-}
-
-.can {
-  font-size: 100px;
-  font-weight: bold;
-}
-
-button {
-  padding: 5px 25px;
-  border-width: 2.5px;
-  border-radius: 5px;
-}
-
 body {
-  text-align: center;
-  background-color: wheat;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.outer-div {
+    height: 730px;
+    width: 730px;
+    border-radius: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, rgba(249,15,216), 
+                                        rgba(245,67,119), 
+                                        rgba(252,28,28), 
+                                        rgba(255,195,13), 
+                                        rgba(114,251,89));
+    background-size: 500%;
+    background-position: top left;
+    animation: counter 10s ease-in-out infinite;
+    transition: .3s;
+}
+
+@keyframes counter {
+    0% {
+        background-position: top left;
+    }
+    50% {
+        background-position: bottom right;
+    }
+    100% {
+        background-position: top left;
+    }
+}
+
+.inner-div {
+    height: 700px;
+    width: 700px;
+    border-radius: 10%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-div {
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+.hello {
+    border-radius: 5px;
+    padding: 5px 25px;
+    margin-top: 20px;
+    border-width: 2.5px;
+}
+
+.counter {
+    width: 600px;
+    font-size: 100px;
+    font-weight: bold;
+    color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.out-lol {
+    height: 80px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.lol {
+    height: 60px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: linear-gradient(145deg, rgba(249,15,216), 
+                                        rgba(245,67,119), 
+                                        rgba(252,28,28), 
+                                        rgba(255,195,13), 
+                                        rgba(114,251,89));
+    background-size: 500%;
+    background-position: top left;
+    animation: counter 10s ease-in-out infinite;
+    transition: .3s;
+}
+  
+.lol:hover {
+    height: 70px;
+    width: 170px;
+}
+  
 .btn {
-  margin-top: 50px;
-  padding: 15px 50px;
-  font-size: large;
-  font-weight: bold;
-  border-width: 2.5px;
-  background-color: white;
-  border: none;
-  box-shadow: 2px 4px gray;
-  transition-duration: 250ms;
-  border-radius: 8px;
-  margin: 10px;
-  cursor: pointer;
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: black;
+    color: wheat;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
 }
-
+  
 .btn:hover {
-  background-color: rgb(165, 41, 41);
-  color: white;
+    height: 60px;
+    width: 160px;
+    border: none;
 }
-
-#bob {
-  font-size: 200px;
-  margin-top: 100px;
-  font-weight: bold;
+  
+#number {
+    height: 150px;
+    width: 600px;
+    font-size: 150px;
+    font-weight: bold;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+  
 .color-container {
-  display: flex;
-  width: 25%;
-  margin: auto;
-  height: 70px;
-  padding: 10px;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
-.Col {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  margin: auto;
-  border: 2px solid black;
-  cursor: pointer;
+  
+.Color {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
 }
 
 #c1 {
-  background-color: red;
+    background-color: red;
 }
 #c2 {
-  background-color: blue;
+    background-color: blue;
 }
 #c3 {
-  background-color: green;
+    background-color: green;
 }
 #c4 {
-  background-color: yellow;
+    background-color: yellow;
 }
 #c5 {
-  background-color: orange;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: black;
-  }
+    background-color: orange;
 }
