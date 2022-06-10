@@ -1,0 +1,91 @@
+.hello {
+  border-radius: 5px;
+  padding: 5px 25px;
+  margin-top: 20px;
+  border-width: 2.5px;
+}
+
+.hello::placeholder {
+  color: rgb(122, 118, 118);
+}
+
+.can {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+button {
+  padding: 5px 25px;
+  border-width: 2.5px;
+  border-radius: 5px;
+}
+
+body {
+  text-align: center;
+  background-color: wheat;
+}
+
+.btn {
+  margin-top: 50px;
+  padding: 15px 50px;
+  font-size: large;
+  font-weight: bold;
+  border-width: 2.5px;
+  background-color: white;
+  border: none;
+  box-shadow: 2px 4px gray;
+  transition-duration: 250ms;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(165, 41, 41);
+  color: white;
+}
+
+#bob {
+  font-size: 200px;
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+.color-container {
+  display: flex;
+  width: 25%;
+  margin: auto;
+  height: 70px;
+  padding: 10px;
+}
+
+.Col {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: auto;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+#c1 {
+  background-color: red;
+}
+#c2 {
+  background-color: blue;
+}
+#c3 {
+  background-color: green;
+}
+#c4 {
+  background-color: yellow;
+}
+#c5 {
+  background-color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+}
